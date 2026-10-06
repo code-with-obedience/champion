@@ -58,4 +58,60 @@ gap: 2rem;
     margin-inline: 0.2rem;
     /* background-color: yellowgreen; */
 }
+@media screen and (min-width: 576px) {
+body{
+    overflow-x: hidden;
+    
+}
+
+header{
+    background-color: rgb(82, 79, 79);
+    display: flex;
+    width: 100%;
+    min-height: 8vh;
+    flex-direction: column;
+    
+}
+
+nav{
+    justify-content: space-between;
+    display: flex;
+    padding: 2rem;
+    /* flex-direction: column-reverse; */
+
+}
+
+.logo{
+    width: 8rem;
+}
+
+.logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.nav-section{
+    /* background: blue; */
+    padding-top: 0.8rem;
+}
+
+.nav-section ul{
+list-style: none;
+display: flex;
+gap: 2rem;
+}
+
+.nav-section a{
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.platforms a{
+    display: inline-block;
+    margin-inline: 0.2rem;
+    /* background-color: yellowgreen; */
+}
+}
 
