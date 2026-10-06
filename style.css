@@ -1,113 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
-    
 }
 
-header{
+header {
     background-color: rgb(82, 79, 79);
-    display: flex;
     width: 100%;
-    min-height: 8vh;
-    flex-direction: column;
-    
 }
 
-nav{
-    justify-content: space-between;
+nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     padding: 2rem;
-    /* flex-direction: column-reverse; */
-
 }
 
-.logo{
+.logo {
     width: 8rem;
 }
 
-.logo img{
+.logo img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.nav-section{
-    /* background: blue; */
+.nav-section {
     padding-top: 0.8rem;
 }
 
-.nav-section ul{
-list-style: none;
-display: flex;
-gap: 2rem;
-}
-
-.nav-section a{
-    font-size: 1rem;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.platforms a{
-    display: inline-block;
-    margin-inline: 0.2rem;
-    /* background-color: yellowgreen; */
-}
-@media screen and (min-width: 400px) {
-
-header{
-    background-color: rgb(82, 79, 79);
+.nav-section ul {
+    list-style: none;
     display: flex;
-    width: 100%;
-    min-height: 8vh;
     flex-direction: column;
-    
+    align-items: center;
+    gap: 1rem;
 }
 
-nav{
-    justify-content: space-between;
-    display: flex;
-    padding: 2rem;
-    /* flex-direction: column-reverse; */
-
-}
-
-.logo{
-    width: 8rem;
-}
-
-.logo img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.nav-section{
-    /* background: blue; */
-    padding-top: 0.8rem;
-}
-
-.nav-section ul{
-list-style: none;
-display: flex;
-gap: 2rem;
-}
-
-.nav-section a{
+.nav-section a {
     font-size: 1rem;
     color: whitesmoke;
     text-decoration: none;
 }
 
-.platforms a{
-    display: inline-block;
-    margin-inline: 0.2rem;
-    /* background-color: yellowgreen; */
-}
+.platforms {
+    display: flex;
+    gap: 0.5rem;
 }
 
+.platforms a {
+    display: inline-block;
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-section ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+}
